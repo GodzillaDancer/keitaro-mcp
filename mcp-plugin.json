@@ -1,0 +1,7 @@
+{
+  "name": "Keitaro TDS API",
+  "description": "Интеграция с Keitaro TDS API для управления кампаниями, потоками, офферами и т.д.",
+  "version": "1.0.0",
+  "command": "npm start",
+  "transport": "stdio"
+} 

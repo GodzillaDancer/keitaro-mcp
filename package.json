@@ -1,0 +1,21 @@
+{
+      "name": "mcp-keitaro-tds",
+      "version": "1.0.0",
+      "type": "module",
+      "description": "MCP server for Keitaro TDS API integration",
+      "main": "src/index.js",
+      "bin": {
+            "mcp-keitaro-tds": "src/index.js"
+      },
+      "scripts": {
+            "start": "node src/index.js",
+            "dev": "node --watch src/index.js",
+            "inspect": "npx -y @modelcontextprotocol/inspector node src/index.js"
+      },
+      "dependencies": {
+            "@modelcontextprotocol/sdk": "^1.9.0",
+            "axios": "^1.6.2",
+            "dotenv": "^16.3.1",
+            "zod": "^3.22.4"
+      }
+}
