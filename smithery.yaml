@@ -1,0 +1,33 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - keitaroApiUrl
+      - keitaroApiKey
+    properties:
+      keitaroApiUrl:
+        type: string
+        description: URL of the Keitaro API, e.g.,
+          http://your-keitaro-domain.com/admin_api/v1
+      keitaroApiKey:
+        type: string
+        description: API key for authenticating with Keitaro API
+    default: {}
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['src/index.js'],
+      env: {
+        KEITARO_API_URL: config.keitaroApiUrl,
+        KEITARO_API_KEY: config.keitaroApiKey
+      }
+    })
+  exampleConfig:
+    keitaroApiUrl: http://example-keitaro.com/admin_api/v1
+    keitaroApiKey: example-api-key-123
