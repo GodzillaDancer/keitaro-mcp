@@ -1,9 +1,19 @@
 # Keitaro TDS API MCP Plugin
 
+[![smithery badge](https://smithery.ai/badge/@GodzillaDancer/keitaro-mcp)](https://smithery.ai/server/@GodzillaDancer/keitaro-mcp)
+
 ## Description
 MCP server for integration with Keitaro TDS API, providing tools to work with campaigns, streams, offers, and other Keitaro entities.
 
 ## Installation
+
+### Installing via Smithery
+
+To install Keitaro TDS API MCP Plugin for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@GodzillaDancer/keitaro-mcp):
+
+```bash
+npx -y @smithery/cli install @GodzillaDancer/keitaro-mcp --client claude
+```
 
 ### Installing the plugin in Cursor
 
