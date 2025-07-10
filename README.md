@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/godzilladancer-keitaro-mcp-badge.png)](https://mseep.ai/app/godzilladancer-keitaro-mcp)
+
 # Keitaro TDS API MCP Plugin
 
 ## Description
